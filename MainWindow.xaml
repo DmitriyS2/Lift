@@ -1,0 +1,25 @@
+﻿<Window x:Class="Lift.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lift"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="tbEtazh" HorizontalAlignment="Left" Margin="45,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="35" FontSize="24"/>
+        <Label Content="На каком Вы этаже" HorizontalAlignment="Left" Height="35" Margin="45,329,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="bRandomEtazh" Content="Random Этаж" HorizontalAlignment="Left" Height="30" Margin="225,359,0,0" VerticalAlignment="Top" Width="115" Click="RandomEtazh"/>
+        <Button x:Name="bGo" Content="Вызов" HorizontalAlignment="Left" Height="30" Margin="490,359,0,0" VerticalAlignment="Top" Width="150" Click="Go"/>
+        <TextBox x:Name="tbLift1" HorizontalAlignment="Left" Height="75" Margin="85,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontSize="56" IsReadOnly="True" IsUndoEnabled="False"/>
+        <Button x:Name="bOn" Content="Вкл" HorizontalAlignment="Left" Margin="705,24,0,0" VerticalAlignment="Top" Height="35" Width="80" Click="Vkl"/>
+        <TextBox x:Name="tbLift2" HorizontalAlignment="Left" Margin="245,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Height="75" FontSize="56" IsReadOnly="True" IsUndoEnabled="False"/>
+        <TextBox x:Name="tbLift3" HorizontalAlignment="Left" Height="75" Margin="405,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontSize="56" IsReadOnly="True" DataContextChanged="ChangeText" IsUndoEnabled="False"/>
+        <TextBox x:Name="tbLift4" HorizontalAlignment="Left" Height="75" Margin="565,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" IsReadOnly="True" FontSize="56" IsUndoEnabled="False"/>
+        <Label Content="Лифт№1" HorizontalAlignment="Left" Height="25" Margin="90,29,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Лифт№2" HorizontalAlignment="Left" Height="25" Margin="245,29,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Лифт№3" HorizontalAlignment="Left" Height="25" Margin="400,29,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Лифт№4" HorizontalAlignment="Left" Height="25" Margin="565,29,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
